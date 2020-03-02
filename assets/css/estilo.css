@@ -1,0 +1,45 @@
+header {
+     font-family: 'Dosis';
+}
+
+#titulo {
+     margin-left: 7%;
+     margin-top: -3%;
+}
+
+#navbar a {
+     color: #848484;
+     font-size: 1.1em;
+     text-decoration: none;
+     transition: all 0.3s ease;
+}
+
+#navbar a:hover {
+     color: dodgerblue;
+}
+
+#navbar a::before {
+     transition: all 0.4s ease-in-out;
+     background-color: dodgerblue;
+}
+
+#breadcrumb {
+     background-color: white;
+}
+
+#breadcrumb li {
+     margin-left: 5px;
+}
+
+abbr {
+     border-bottom: none !important;
+     text-decoration: none !important;
+}
+
+article {
+     font-family: 'Karla';
+}
+
+footer {
+     font-family: 'Dosis';
+}

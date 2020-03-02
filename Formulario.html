@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<link href="./assets/css/estilo.css" rel="StyleSheet" type="text/css" />
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+		integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+	<link href="https://fonts.googleapis.com/css?family=Dosis|Karla&display=swap" rel="stylesheet">
+	<link rel="shortcut icon" href="./assets/images/icons_amazon.png" />
+	<link rel="stylesheet" type="text/css" href="./assets/css/estilo.css">
+	<title>Formulario de contacto</title>
+</head>
+
+<body>
+	<div class="container-fluid">
+		<header>
+			<div class="row p-3 mb-2 bg-dark text-white">
+				<div class="col-6 mt-4">
+					<i class="fab fa-amazon"></i>
+					<h1 class="text-primary" id="titulo">Formulario de Contacto</h1>
+				</div>
+				<div class="col-6 mt-3">
+					<nav class="navbar navbar-expand-xl navbar-dark" id="navbar">
+						<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+							aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+							<span class="navbar-toggler-icon"></span>
+						</button>
+						<div class="collapse navbar-collapse" id="navbarNav">
+							<ul class="navbar-nav">
+								<li class="nav-item">
+									<a class="nav-link" href="./index.html" title="Inicio">Inicio</a>
+								</li>
+								<li class="nav-item">
+									<a class="nav-link" href="./PrimevsNetflix.html"
+										title="Prime Vídeo vs Netflix">Amazon Prime Vídeo vs Netflix</a>
+								</li>
+								<li class="nav-item active">
+									<a class="nav-link" href="#" title="Formulario">Formulario de Contacto <span class="sr-only">(current)</span></a>
+								</li>
+								<li class="nav-item">
+									<a class="nav-link" href="./AmazonMusicvsSpotify.html"
+										title="Amazon Music vs Spotify">Amazon Music vs Spotify</a>
+								</li>
+							</ul>
+						</div>
+					</nav>
+				</div>
+			</div>
+			<div class="row">
+				<nav aria-label="breadcrumb">
+					<ol class="breadcrumb" id="breadcrumb">
+						<abbr title="Haga clic para ir a la página principal">
+							<li class="breadcrumb-item" aria-current="page"><a href="./index.html">Home</a></li>
+						</abbr>
+						<abbr title="Usted está aquí">
+							<li class="breadcrumb-item active" aria-current="page"><a href="#">Formulario</a></li>
+						</abbr>
+					</ol>
+				</nav>
+			</div>
+		</header>
+		<article>
+			<div class="row justify-content-center">
+				<div class="col-3 mt-5">
+					<form method="post">
+						<div class="form-group">
+							<label for="lblnombre">Introduzca su nombre:</label>
+							<input type="text" class="form-control" pattern="[a-zA-Z]*"
+								title="Sólo carácteres y en minúsculas" size="12" maxlength="12"
+								placeholder="Jorge Correas" required>
+						</div>
+						<div class="form-group">
+							<label for="lblcorreo">Introduzca su correo:</label>
+							<input type="email" class="form-control" placeholder="jorgecrr@gmail.com"
+								title="Escriba aquí su correo" required>
+						</div>
+						<div class="form-group">
+							<div class="form-check">
+								<input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1"
+									value="option1" checked>
+								<label class="form-check-label" for="exampleRadios1">Hombre</label>
+							</div>
+							<div class="form-check">
+								<input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1"
+									value="option1">
+								<label class="form-check-label" for="exampleRadios1">Mujer</label>
+							</div>
+						</div>
+						<div class="form-group">
+							<label for="lblprovincia">Elija desde que provincia me está escribiendo:</label>
+							<select name="provincia" class="form-control">
+								<optgroup label="Andalucía">
+									<option value="AL">Almería</option>
+									<option value="CA">Cádiz</option>
+									<option value="CO">Córdoba</option>
+									<option value="GR">Granada</option>
+									<option value="HU">Huelva</option>
+									<option value="JA">Jaén</option>
+									<option value="MA">Málaga</option>
+									<option value="SE" selected="selected">Sevilla</option>
+								</optgroup>
+								<optgroup label="Extremadura">
+									<option value="CA">Cáceres</option>
+									<option value="BA">Badajoz</option>
+								</optgroup>
+								<optgroup label="Castilla La Mancha">
+									<option value="AL">Albacete</option>
+									<option value="CR">Ciudad Real</option>
+									<option value="CU">Cuenca</option>
+									<option value="TO">Toledo</option>
+									<option value="GA">Guadalajara</option>
+								</optgroup>
+								<optgroup label="Madrid">
+									<option value="MD">Madrid</option>
+								</optgroup>
+								<optgroup label="Castilla Y León">
+									<option value="AV">Ávila</option>
+									<option value="BU">Burgos</option>
+									<option value="LE">León</option>
+									<option value="SA">Salamanca</option>
+									<option value="SG">Segovia</option>
+									<option value="SA">Soria</option>
+									<option value="PA">Palencia</option>
+									<option value="VA">Valladolid</option>
+									<option value="ZA">Zamora</option>
+								</optgroup>
+							</select>
+						</div>
+						<div class="form-group">
+							<label class="lbltxt">Indique su opinión sobre Amazon Prime Video vs Netflix:</label>
+							<textarea class="form-control" rows="5" cols="50" placeholder="Escriba aquí su opinión"
+								required></textarea>
+						</div>
+						<button type="submit" class="btn btn-success"><i class="fas fa-paper-plane"></i> Enviar</button>
+						<button type="reset" class="btn btn-warning"><i class="fas fa-sync"></i> Resetear</button>
+					</form>
+				</div>
+			</div>
+		</article>
+		<footer>
+			<div class="row justify-content-center p-3 mt-5 bg-dark text-white">
+				<div class="col-2">
+					<img class="img-fluid" alt="Icono de Amazon" src="./assets/images/amazon_logo.png">
+				</div>
+			</div>
+			<div class="row justify-content-center p-3 bg-dark text-white">
+				<div class="col-8">
+					<ul class="nav nav-pills nav-justified">
+						<li class="nav-item">
+							<a class="nav-link text-info" href="https://www.amazon.de">Amazon Alemania</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link text-info" href="https://www.amazon.cn">Amazon China</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link text-info" href="https://www.amazon.com">Amazon USA e Internacional</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link text-info" href="https://www.amazon.es">Amazon España</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link text-info" href="https://www.amazon.fr">Amazon Francia</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link text-info" href="https://www.amazon.it">Amazon Italia</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link text-info" href="https://www.amazon.mx">Amazon México</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link text-info" href="https://www.amazon.uk">Amazon UK</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+			<div class="row justify-content-center p-3 bg-dark text-white">
+				<div class="col-4 mt-3">
+					<p class="text-center">Página Realizada por Manuel Jesús Ojeda Salvador 2º DAW</p>
+					<p class="text-center text-monospace"><i class="fas fa-copyright"></i> MJ 2020</p>
+					</p>
+				</div>
+			</div>
+		</footer>
+	</div>
+	<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+		integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous">
+	</script>
+	<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+		integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous">
+	</script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+		integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous">
+	</script>
+	<!-- FontAwesome -->
+	<script src="https://kit.fontawesome.com/acdf8e9705.js" crossorigin="anonymous"></script>
+</body>
+
+</html>
